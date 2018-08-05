@@ -1,0 +1,14 @@
+<a href="{% url 'house_list' %}">Go Back To Building list</a>
+
+    <br>
+    <br>
+    <br>
+    <h1>Update the Building</h1>
+    <br>
+    <br>
+    <br>
+
+<form method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Update" />
+</form>

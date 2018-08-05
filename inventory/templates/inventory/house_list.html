@@ -1,0 +1,37 @@
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+{% load static %}
+
+<html>
+<head>
+    <br>
+    <br>
+    <br>
+    <h1>House List</h1>
+    <br>
+    <br>
+    <br>
+
+</head>
+
+<body>
+
+<table border="2">
+    <thead>
+    <tr>
+        <th> ID</th>
+        <th>House Number</th>
+    </tr>
+    </thead>
+    <tbody>
+
+{% for item in object_list %}
+<tr>
+<td>{{ house.id }}</td>
+<td>{{ house.house_number }}</td>
+
+</tr>
+
+{% endfor %}
+</tbody>
+</table>

@@ -1,0 +1,16 @@
+<a href="{% url 'item_list' %}">Go Back To Item list</a>
+
+    <br>
+    <br>
+    <br>
+
+    <h1>Create a new item.</h1>
+
+    <br>
+    <br>
+    <br>
+
+<form method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
